@@ -1,0 +1,448 @@
+{% load static %} {% load crispy_forms_tags %} {% include 'navbar.html' %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="{% static 'C:\Django\upd\draw\start\static\css\stylesheet.css' %}" rel="stylesheet">
+    <title>{{title}}</title>
+
+    <link href="{% static 'js/jquery-ui-1.12.1/jquery-ui.min.css' %}" rel="stylesheet">
+    <link href="{% static 'js/jquery-ui-1.12.1/jquery-ui.structure.min.css' %}" rel="stylesheet">
+    <link href="{% static 'js/jquery-ui-1.12.1/jquery-ui.theme.min.css' %}" rel="stylesheet">
+
+
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-1.12.1/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/myjs.js' %}"></script>
+</head>
+
+<body><br>
+
+
+
+    <div class="myForm">
+        <form method='POST' action=''>{% csrf_token %}
+            <div class="row">
+                <div class='col-sm-10'>
+                    <div class="form-row">
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.date|as_crispy_field }} {{ form.serial_number|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.id_num|as_crispy_field }} {{ form.ngdu|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.responsible|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.order|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_1|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_1 |as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_1|as_crispy_field }}
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5  pl-5">
+                            {{ form.service_2|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_2|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_2|as_crispy_field }}
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_3|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_3|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_3|as_crispy_field }}
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_4|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_4|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_4|as_crispy_field }}
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_5|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_5|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_5|as_crispy_field }}
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_6|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_6|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_6|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_7|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_7|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_7|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_8|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_8|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_8|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_9|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_9|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_9|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_10|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_10|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_10|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_11|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_11|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_11|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_12|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_12|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_12|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_13|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_13|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_13|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_14|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_14|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_14|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_15|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_15|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_15|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_16|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_16|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_16|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_17|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_17|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_17|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_18|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_18|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_18|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_19|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_19|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_19|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_20|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_20|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_20|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_21|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_21|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_21|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_22|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_22|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_22|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_23|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_23|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_23|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_24|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_24|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_24|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_25|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_25|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_25|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_26|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_26|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_26|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_27|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_27|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_27|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_28|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_28|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_28|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.service_29|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-2">
+                            {{ form.price_29|as_crispy_field }}
+                        </div>
+                        <div>
+                            <p>Select</p>
+                            {{ form.checkbox_29|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5 pl-5 ">
+                            {{ form.total_price|as_crispy_field }}
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary ">Save</button>
+
+                    <!-- <a href="  url 'export_pdf' " class="bin btn-info">Export PDF</a> -->
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
